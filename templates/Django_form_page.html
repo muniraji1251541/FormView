@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Django_form_page</title>
+</head>
+<body>
+ 	<center>
+ 		<h1>Django_form</h1>
+ 		<form method="POST">
+ 			{% csrf_token %}
+ 			{{form.as_p}}
+
+ 			<input type="submit">
+ 			
+ 		</form>
+ 			
+ 	</center>
+</body>
+</html>
